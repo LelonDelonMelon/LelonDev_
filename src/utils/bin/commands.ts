@@ -96,7 +96,16 @@ export const login = async(args: string[]): Promise<string> => {
 
     return `I love you ${args}`;
   }
-  
+  if(args[0] == 'nigger')
+  {
+    config.ps1_username = "DON'T";
+    return 'do that';
+  }
+  if(args[0] === 'mux')
+  {
+    config.ps1_username = 'fux';
+    return `logged in as ${args}`
+  }
     config.ps1_username = args[0];
     return `logged in as ${args}`;
 
