@@ -1,16 +1,16 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "LelonDev",
+  "name": "Burak Katı",
+  "ascii": "LelonDev",
   "social": {
-    "github": "github",
+    "github": "lelondelonmelon",
     "linkedin": "linkedin"
   },
   "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "ps1_hostname": "LelonDev",
+  "ps1_username": "hax0r",
+  "repo": "https://github.com/lelondelonmelon",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "donate_urls": {
     "paypal": "https://paypal.me/cveinnt",
