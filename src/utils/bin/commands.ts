@@ -90,7 +90,24 @@ export const reddit = async (args: string[]): Promise<string> => {
   window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
   return `Searching reddit for ${args.join(' ')}...`;
 };
+export const login = async(args: string[]): Promise<string> => {
+  if(args[0]=== 'busra'){
+    config.ps1_username = args[0];
 
+    return `I love you ${args}`;
+  }
+  
+    config.ps1_username = args[0];
+    return `logged in as ${args}`;
+
+}
+export const logout = async(args: string[]): Promise<string> => {
+  if(args[0] === config.ps1_username)
+  {
+    config.ps1_username = "hax0r";
+    return 'Logged out'
+  }
+}
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
