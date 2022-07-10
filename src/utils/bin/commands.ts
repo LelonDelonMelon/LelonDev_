@@ -24,7 +24,7 @@ Type 'sumfetch' to display summary.
 
 // Redirection
 export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
+  setTimeout(() => window.open(`${config.repo}`), 500);
   return 'Opening Github repository...';
 };
 
@@ -39,7 +39,7 @@ More about me:
 };
 
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
+  setTimeout(() => window.open(`${config.resume_url}`), 500);
   return 'Opening resume...';
 };
 
@@ -54,40 +54,40 @@ here are the ways you can support my work:
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`);
+  setTimeout(() => window.open(`mailto:${config.email}`), 500);
   return `Opening mailto:${config.email}...`;
 };
 
 export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
+  setTimeout(() => window.open(`https://github.com/${config.social.github}/`), 500);
 
   return 'Opening github...';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+  setTimeout(() => window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`), 500);
 
   return 'Opening linkedin...';
 };
 
 // Search
 export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
+  setTimeout(() => window.open(`https://google.com/search?q=${args.join(' ')}`), 500);
   return `Searching google for ${args.join(' ')}...`;
 };
 
 export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
+  setTimeout(() => window.open(`https://duckduckgo.com/?q=${args.join(' ')}`), 500);
   return `Searching duckduckgo for ${args.join(' ')}...`;
 };
 
 export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
+  setTimeout(() => window.open(`https://bing.com/search?q=${args.join(' ')}`), 500);
   return `Wow, really? You are using bing for ${args.join(' ')}?`;
 };
 
 export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
+  setTimeout(() => window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`), 500);
   return `Searching reddit for ${args.join(' ')}...`;
 };
 export const login = async(args: string[]): Promise<string> => {
@@ -156,7 +156,7 @@ export const emacs = async (args?: string[]): Promise<string> => {
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+  setTimeout(() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'), 500); // ...I'm sorry
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
