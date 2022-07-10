@@ -91,11 +91,7 @@ export const reddit = async (args: string[]): Promise<string> => {
   return `Searching reddit for ${args.join(' ')}...`;
 };
 export const login = async(args: string[]): Promise<string> => {
-  if(args[0]=== 'busra'){
-    config.ps1_username = args[0];
-
-    return `I love you ${args}`;
-  }
+  
   if(args[0] == 'nigger')
   {
     config.ps1_username = "DON'T";
