@@ -1,4 +1,4 @@
-# [💻 LiveTerm fork of LelonDev!](https://liveterm.vercel.app)
+# [💻 LiveTerm fork of LelonDev!](https://lelon-dev.vercel.app/)
 
 This is a fork of LiveTerm app.
 
