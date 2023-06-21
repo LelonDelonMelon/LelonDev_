@@ -92,26 +92,15 @@ export const reddit = async (args: string[]): Promise<string> => {
   setTimeout(() => window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`), 500);
   return `Searching reddit for ${args.join(' ')}...`;
 };
-export const login = async(args: string[]): Promise<string> => {
-  
-  if(args[0] == 'nigger')
-  {
-    config.ps1_username = "DON'T";
-    return 'do that';
-  }
-  if(args[0] === 'mux')
-  {
-    config.ps1_username = 'fux';
-    return `logged in as ${args}`
-  }
-    config.ps1_username = args[0];
-    return `logged in as ${args}`;
+export const login = async (args: string[]): Promise<string> => {
+
+  config.ps1_username = "user";
+  return `logged in as ${args}`;
 
 }
-export const logout = async(args: string[]): Promise<string> => {
-  if(args[0] === config.ps1_username)
-  {
-    config.ps1_username = "hax0r";
+export const logout = async (args: string[]): Promise<string> => {
+  if (args[0] === config.ps1_username) {
+    config.ps1_username = "user";
     return 'Logged out'
   }
 }
